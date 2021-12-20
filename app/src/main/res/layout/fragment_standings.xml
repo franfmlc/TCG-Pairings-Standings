@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:background="@color/backgroundWhite">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                style="@style/StandingColumnTitle"
+                android:text="Pos"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                style="@style/StandingColumnTitle"
+                android:text="@string/name"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/standings_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/backgroundWhite">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/points"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    style="@style/TiebreakerColumnItem"
+                    android:text="@string/points"/>
+
+                <TextView
+                    android:id="@+id/omw"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    style="@style/TiebreakerColumnItem"
+                    android:text="OMW%"/>
+
+                <TextView
+                    android:id="@+id/gw"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    style="@style/TiebreakerColumnItem"
+                    android:text="GW%"/>
+
+                <TextView
+                    android:id="@+id/ogw"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    style="@style/TiebreakerColumnItem"
+                    android:text="OGW%"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tiebreakers_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

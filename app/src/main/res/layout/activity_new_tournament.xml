@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/number_players_image"
+        app:srcCompat="@drawable/ic_baseline_people_alt_30"
+        style="@style/newTournamentImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/number_rounds_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/number_players_text"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/number_players_text"
+        android:text="@string/number_players"
+        style="@style/newTournamentTextView"
+        app:layout_constraintTop_toTopOf="@id/number_players_image"
+        app:layout_constraintBottom_toBottomOf="@id/number_players_image"
+        app:layout_constraintStart_toEndOf="@id/number_players_image"
+        app:layout_constraintEnd_toStartOf="@id/phantom_view_left"/>
+
+    <TextView
+        android:id="@+id/phantom_view_left"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        app:layout_constraintTop_toTopOf="@id/number_players_text"
+        app:layout_constraintBottom_toBottomOf="@id/number_players_text"
+        app:layout_constraintStart_toEndOf="@id/number_players_text"
+        app:layout_constraintEnd_toStartOf="@id/number_players_count"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/number_players_count"
+        style="@style/newTournamentInputLayout"
+        app:layout_constraintTop_toTopOf="@id/number_players_text"
+        app:layout_constraintBottom_toBottomOf="@id/number_players_text"
+        app:layout_constraintStart_toEndOf="@id/phantom_view_left"
+        app:layout_constraintEnd_toEndOf="@id/phantom_view_right"
+        app:hintEnabled="false"
+        app:boxStrokeColor="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number_players"
+            style="@style/newTournamentInputEditText"
+            android:text="0"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/phantom_view_right"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintTop_toTopOf="@id/number_players_count"
+        app:layout_constraintBottom_toBottomOf="@id/number_players_count"
+        app:layout_constraintStart_toEndOf="@id/number_players_count"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/number_rounds_image"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_baseline_assignment_30"
+        style="@style/newTournamentImageView"
+        app:layout_constraintTop_toBottomOf="@id/number_players_image"
+        app:layout_constraintBottom_toTopOf="@id/round_time_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/number_rounds_text"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/number_rounds_text"
+        android:text="@string/number_rounds"
+        style="@style/newTournamentTextView"
+        app:layout_constraintTop_toTopOf="@id/number_rounds_image"
+        app:layout_constraintBottom_toBottomOf="@id/number_rounds_image"
+        app:layout_constraintStart_toEndOf="@id/number_rounds_image"
+        app:layout_constraintEnd_toStartOf="@id/decrement_rounds"/>
+
+    <ImageButton
+        android:id="@+id/decrement_rounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        app:layout_constraintTop_toTopOf="@id/number_rounds_text"
+        app:layout_constraintBottom_toBottomOf="@id/number_rounds_text"
+        app:layout_constraintStart_toEndOf="@id/number_rounds_text"
+        app:layout_constraintEnd_toStartOf="@id/number_rounds_count"
+        app:srcCompat="@drawable/ic_outline_arrow_back_ios_32"
+        android:background="@android:color/transparent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/number_rounds_count"
+        style="@style/newTournamentInputLayout"
+        app:layout_constraintTop_toTopOf="@id/number_rounds_text"
+        app:layout_constraintBottom_toBottomOf="@id/number_rounds_text"
+        app:layout_constraintStart_toEndOf="@id/decrement_rounds"
+        app:layout_constraintEnd_toStartOf="@id/increment_rounds"
+        app:hintEnabled="false"
+        app:boxStrokeColor="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number_rounds"
+            style="@style/newTournamentInputEditText"
+            android:text="0"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/increment_rounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintTop_toTopOf="@id/number_rounds_count"
+        app:layout_constraintBottom_toBottomOf="@id/number_rounds_count"
+        app:layout_constraintStart_toEndOf="@id/number_rounds_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_outline_arrow_forward_ios_32"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/round_time_image"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_baseline_timer_30"
+        style="@style/newTournamentImageView"
+        app:layout_constraintTop_toBottomOf="@id/number_rounds_image"
+        app:layout_constraintBottom_toTopOf="@id/enroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/round_time_text"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/round_time_text"
+        android:text="@string/round_time"
+        style="@style/newTournamentTextView"
+        app:layout_constraintTop_toTopOf="@id/round_time_image"
+        app:layout_constraintBottom_toBottomOf="@id/round_time_image"
+        app:layout_constraintStart_toEndOf="@id/round_time_image"
+        app:layout_constraintEnd_toStartOf="@id/decrement_time"/>
+
+    <ImageButton
+        android:id="@+id/decrement_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/round_time_text"
+        app:layout_constraintBottom_toBottomOf="@id/round_time_text"
+        app:layout_constraintStart_toEndOf="@id/round_time_text"
+        app:layout_constraintEnd_toStartOf="@id/round_time_count"
+        app:srcCompat="@drawable/ic_outline_arrow_back_ios_32" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/round_time_count"
+        style="@style/newTournamentInputLayout"
+        app:layout_constraintTop_toTopOf="@id/round_time_text"
+        app:layout_constraintBottom_toBottomOf="@id/round_time_text"
+        app:layout_constraintStart_toEndOf="@id/decrement_time"
+        app:layout_constraintEnd_toStartOf="@id/increment_time"
+        app:hintEnabled="false"
+        app:boxStrokeColor="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/round_time"
+            style="@style/newTournamentInputEditText"
+            android:text="50"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/increment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintTop_toTopOf="@id/round_time_count"
+        app:layout_constraintBottom_toBottomOf="@id/round_time_count"
+        app:layout_constraintStart_toEndOf="@id/round_time_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_outline_arrow_forward_ios_32"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/enroll"
+        android:text="@string/enroll"
+        style="@style/primaryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/start"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <Button
+        android:id="@+id/start"
+        android:text="@string/start"
+        style="@style/primaryButton"
+        app:layout_constraintStart_toEndOf="@id/enroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryVariant">#303F9F</color>
+    <color name="colorSecondary">#ff4081</color>
+    <color name="mainHeader">@color/colorPrimary</color>
+    <color name="tournamentsListHeader">@color/material_on_surface_emphasis_high_type</color>
+    <color name="tabIndicatorColor">@color/colorSecondary</color>
+    <color name="idTextColor">@color/colorPrimary</color>
+
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorSelected">#40c4ff</color>
+    <color name="white">#ffffff</color>
+    <color name="enrolledText">#950de3</color>
+    <color name="availableText">#4fb80a</color>
+    <color name="grey">#FBFBFB</color>
+    <color name="backgroundWhite">#fff</color>
+</resources>

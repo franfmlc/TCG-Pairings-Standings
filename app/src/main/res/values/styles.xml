@@ -1,0 +1,188 @@
+<resources>
+    <style name="ToolbarPrimarySurface" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- Primary implementation for the Toolbar theme. -->
+    </style>
+
+    <!-- Generic -->
+    <style name="primaryButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="TextAppearance.Pairings.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <!-- Main Activity -->
+    <style name="buttonSw480dp">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">400dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="buttonStandardSw">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!-- New Tournament Activity -->
+    <style name="newTournamentImageView">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="newTournamentTextView">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <style name="newTournamentInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="newTournamentInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <style name="newTournamentImageViewSw480">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="newTournamentTextViewSw480">
+        <item name="android:layout_width">190dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <style name="newTournamentInputLayoutSw480" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="newTournamentInputEditTextSw480">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <!-- Player Management activity -->
+    <style name="PlayerRowElement">
+        <item name="android:textAppearance">?android:attr/textAppearanceListItemSmall</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Tournament Manager activity -->
+    <style name="BaseElement">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="HeaderElement" parent="BaseElement">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/tournamentsListHeader</item>
+        <item name="android:background">@color/mainHeader</item>
+    </style>
+
+    <style name="RowElement" parent="BaseElement">
+        <item name="android:layout_height">72dp</item>
+    </style>
+
+    <style name="ListHeader" parent="android:Widget.TextView">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="SimpleRowItem">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/material_on_background_emphasis_medium</item>
+    </style>
+
+    <style name="PlayerNameInPairing">
+        <item name="android:layout_width">115dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StandingColumnTitle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TiebreakerColumnItem" parent="StandingColumnTitle">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TiebreakerColumnItemLand" parent="StandingColumnTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StandingItemTextStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TiebreakerItemTextStyle" parent="StandingItemTextStyle">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TiebreakerItemTextStyleLand" parent="StandingItemTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.Score" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minWidth">47dp</item>
+        <item name="android:minHeight">47dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+</resources>

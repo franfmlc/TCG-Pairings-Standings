@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/date"
+        android:text="18/09/21"
+        style="@style/RowElement"/>
+
+    <TextView
+        android:id="@+id/players"
+        android:text="50"
+        style="@style/RowElement"/>
+
+    <TextView
+        android:id="@+id/round"
+        android:text="10/50"
+        style="@style/RowElement"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:text="50"
+        style="@style/RowElement"/>
+
+</LinearLayout>

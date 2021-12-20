@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!--Color-->
+        <item name="colorPrimary">#1EB980</item>
+        <item name="colorSecondary">#BB86FC</item>
+        <item name="android:textColorPrimary">@color/color_on_surface_emphasis_high</item>
+
+        <!--Tab Layout style-->
+        <item name="tabStyle">@style/TabNight</item>
+
+        <!--Alpha values for Dark Theme-->
+        <item name="emphasisHighAlpha">0.87</item>
+        <item name="emphasisMediumAlpha">0.60</item>
+        <item name="emphasisDisabledAlpha">0.38</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <!--NoActionBar attributes-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

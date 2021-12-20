@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp">
+
+    <TextView
+        android:id="@+id/player_match_points"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/player_omw"
+        android:gravity="center"
+        android:textAlignment="center"
+        style="@style/TiebreakerItemTextStyleLand"/>
+
+    <TextView
+        android:id="@+id/player_omw"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/player_match_points"
+        app:layout_constraintEnd_toStartOf="@id/player_gw"
+        android:gravity="center"
+        android:textAlignment="center"
+        style="@style/TiebreakerItemTextStyleLand"/>
+
+    <TextView
+        android:id="@+id/player_gw"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/player_omw"
+        app:layout_constraintEnd_toStartOf="@id/player_ogw"
+        android:gravity="center"
+        android:textAlignment="center"
+        style="@style/TiebreakerItemTextStyleLand"/>
+
+    <TextView
+        android:id="@+id/player_ogw"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/player_gw"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        style="@style/TiebreakerItemTextStyleLand"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

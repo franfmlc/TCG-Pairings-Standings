@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">TCG Pairings &amp; Standings</string>
+
+    <!-- activity_main_activity.xml -->
+    <string name="new_tournament">New Tournament</string>
+    <string name="tournaments">Tournaments</string>
+    <string name="player_management">Player Management</string>
+
+    <string name="continues">Continue</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- activity_add_player.xml -->
+    <string name="name">Name</string>
+    <string name="identification">ID</string>
+    <string name="enter_player_hint">Enter player name</string>
+    <string name="enter_identification_hint">Enter player ID (Optional)</string>
+    <string name="save_player">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search_bar">Search</string>
+    <string name="delete_bin">Delete</string>
+    <string name="no_players_found">No players found</string>
+
+    <!-- searchable.xml -->
+    <string name="search_hint">Search by player name or ID</string>
+
+    <!-- activity_new_tournament.xml -->
+    <string name="enroll">Enroll</string>
+    <string name="start">Start</string>
+    <string name="number_players">Number of Players</string>
+    <string name="number_rounds">Number of Rounds</string>
+    <string name="round_time">Round time (min)</string>
+    <string name="enroll_3_players">Enroll at least 3 players to start a tournament</string>
+
+    <!-- enroll_player.xml -->
+    <string name="available">"Available: "</string>
+    <string name="enrolled">"Enrolled: "</string>
+    <string name="enroll_all">Enroll All</string>
+    <string name="confirm">Confirm</string>
+    <string name="create_player">Create player</string>
+
+    <!-- activity_player_management_.xml -->
+    <string name="delete_players_error">Some players cannot be deleted due to their enrollment in an existing tournament</string>
+
+    <!-- activity_tournaments_view.xml -->
+    <string name="date">Date</string>
+    <string name="players">Players</string>
+    <string name="round">Round</string>
+    <string name="time">Time (m)</string>
+    <string name="resume">Resume</string>
+    <string name="delete_tournament_title">Delete tournament</string>
+    <string name="delete_tournament_msg">&lt;br>&lt;b>Tournament Date&lt;/b>: %1$s&lt;br>&lt;br>&lt;b>Number of players&lt;/b>: %2$s&lt;br></string>
+    <string name="no_tournaments_found">No tournaments found</string>
+
+    <!-- Pairings activity -->
+    <string name="pairings">Pairings</string>
+    <string name="standings">Standings</string>
+    <string name="start_round">Start Round</string>
+    <string name="points">Points</string>
+    <string name="pause_tournament_title">Pause Tournament</string>
+    <string name="pause_tournament_msg">This action will pause the tournament. You\'ll be able to resume it later. \n\nIf you don\'t want to pause it, press Cancel button</string>
+    <string name="unfinished_matches_title">Unfinished matches</string>
+    <string name="unfinished_matches_msg">Some matches have not finished yet. Do you want to continue?\n\n(Less points will be given to those players on unfinished games)</string>
+    <string name="no_players_matched_title">No Players Matched</string>
+    <string name="no_players_matched_msg">It was not possible to create new pairings with the current standings. Players will be matched randomly</string>
+    <string name="tournament_finished_title">Tournament Finished</string>
+    <string name="remove_tournament_msg">You can now delete this tournament</string>
+    <string name="pause_round">Pause</string>
+    <string name="finish_round">Finish</string>
+    <string name="keep">Keep</string>
+</resources>

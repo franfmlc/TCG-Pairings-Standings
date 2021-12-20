@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Pos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/name"
+        style="@style/StandingColumnTitle"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/position"
+        app:layout_constraintEnd_toStartOf="@id/points"
+        style="@style/StandingColumnTitle"/>
+
+    <TextView
+        android:id="@+id/points"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/points"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/name"
+        app:layout_constraintEnd_toStartOf="@id/omw"
+        style="@style/TiebreakerColumnItemLand"/>
+
+    <TextView
+        android:id="@+id/omw"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/points"
+        app:layout_constraintEnd_toStartOf="@id/gw"
+        style="@style/TiebreakerColumnItemLand"
+        android:text="OMW%"/>
+
+    <TextView
+        android:id="@+id/gw"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/omw"
+        app:layout_constraintEnd_toStartOf="@id/ogw"
+        style="@style/TiebreakerColumnItemLand"
+        android:text="GW%"/>
+
+    <TextView
+        android:id="@+id/ogw"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gw"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        style="@style/TiebreakerColumnItemLand"
+        android:text="OGW%"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/standings_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toBottomOf="@id/position"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/position"
+        app:layout_constraintEnd_toEndOf="@id/name"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tiebreakers_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toBottomOf="@id/points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/points"
+        app:layout_constraintEnd_toEndOf="@id/ogw"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

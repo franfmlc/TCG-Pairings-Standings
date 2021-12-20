@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">TCG Gestor de Torneos</string>
+
+    <!-- activity_main_activity.xml -->
+    <string name="new_tournament">Crear Torneo</string>
+    <string name="tournaments">Torneos</string>
+    <string name="player_management">Editar Jugadores</string>
+
+    <string name="continues">Continuar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- activity_add_player.xml -->
+    <string name="name">Nombre</string>
+    <string name="identification">ID</string>
+    <string name="enter_player_hint">Introduce el nombre</string>
+    <string name="enter_identification_hint">Introduce el ID (Opcional)</string>
+    <string name="save_player">Guardar</string>
+    <string name="delete">Borrar</string>
+    <string name="search_bar">Buscar</string>
+    <string name="delete_bin">Borrar</string>
+    <string name="no_players_found">Sin jugadores</string>
+
+    <!-- searchable.xml -->
+    <string name="search_hint">Buscar por nombre o ID</string>
+
+    <!-- activity_new_tournament.xml -->
+    <string name="enroll">Inscribir</string>
+    <string name="start">Comenzar</string>
+    <string name="number_players">Total de Jugadores</string>
+    <string name="number_rounds">Número de Rondas</string>
+    <string name="round_time">Tiempo de Ronda (min)</string>
+    <string name="enroll_3_players">Inscribe al menos 3 jugadores para comenzar un torneo</string>
+
+    <!-- enroll_player.xml -->
+    <string name="available">"Disponibles: "</string>
+    <string name="enrolled">"Inscritos: "</string>
+    <string name="enroll_all">Todos</string>
+    <string name="confirm">Confirmar</string>
+    <string name="create_player">Crear Jugador</string>
+
+    <!-- activity_player_management_.xml -->
+    <string name="delete_players_error">Algunos jugadores no se pueden borrar ya que están inscritos a un torneo</string>
+
+    <!-- activity_tournaments_view.xml -->
+    <string name="date">Fecha</string>
+    <string name="players">Jugadores</string>
+    <string name="round">Ronda</string>
+    <string name="time">Tiempo</string>
+    <string name="resume">Reanudar</string>
+    <string name="delete_tournament_title">Borrar Torneo</string>
+    <string name="delete_tournament_msg">&lt;br>&lt;b>Fecha Torneo&lt;/b>: %1$s&lt;br>&lt;br>&lt;b>Número jugadores&lt;/b>: %2$s&lt;br></string>
+    <string name="no_tournaments_found">Sin Torneos</string>
+
+    <!-- Pairings activity -->
+    <string name="pairings">Emparejamientos</string>
+    <string name="standings">Clasificación</string>
+    <string name="start_round">Comenzar Ronda</string>
+    <string name="points">Puntos</string>
+    <string name="pause_tournament_title">Pausar Torneo</string>
+    <string name="pause_tournament_msg">Esta acción pausará el torneo. Podrás reanudarlo más tarde. \n\nSi no quieres pausarlo, pulsa el botón Cancelar</string>
+    <string name="unfinished_matches_title">Partidas sin completar</string>
+    <string name="unfinished_matches_msg">Algunas partidas no han acabado. ¿Quieres continuar?\n\n(Se darán menos puntos a los jugadores con partidas sin completar)</string>
+    <string name="no_players_matched_title">Jugadores sin emparejar</string>
+    <string name="no_players_matched_msg">No fue posible crear nuevos emparejamientos con la clasificación actual. Los jugadores se emparejarán de forma aleatoria</string>
+    <string name="tournament_finished_title">Torneo Finalizado</string>
+    <string name="remove_tournament_msg">Ya puedes borrar este torneo</string>
+    <string name="pause_round">Pausar</string>
+    <string name="finish_round">Terminar</string>
+    <string name="keep">Conservar</string>
+</resources>

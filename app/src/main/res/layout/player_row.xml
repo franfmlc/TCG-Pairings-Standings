@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="playerName"
+            type="String"/>
+        <variable
+            name="playerIdentification"
+            type="String"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                app:buttonTint="?attr/colorControlNormal"/>
+
+            <TextView
+                android:id="@+id/player_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="?attr/colorControlNormal"
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
+                style="@style/PlayerRowElement"
+                android:text="@{playerName}"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/player_identification_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/idTextColor"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            style="@style/PlayerRowElement"
+            android:text="@{playerIdentification}"/>
+    </LinearLayout>
+</layout>

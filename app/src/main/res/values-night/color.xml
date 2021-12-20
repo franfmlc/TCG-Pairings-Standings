@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainHeader">@null</color>
+    <color name="tournamentsListHeader">#1EB980</color>
+    <color name="tabIndicatorColor">#1EB980</color>
+    <color name="idTextColor">#03DAC5</color>
+    <color name="grey">@null</color>
+    <color name="backgroundWhite">@null</color>
+    <color name="enrolledText">#BB86FC</color>
+    <color name="availableText">#BB86FC</color>
+</resources>
